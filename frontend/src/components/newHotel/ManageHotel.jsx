@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+
 const ManageHotel = (props) => {
   const [hotelAction, setHotelaAction] = useState("Agregar");
   const [hotelId, setHotelaId] = useState("");
@@ -61,6 +62,7 @@ const ManageHotel = (props) => {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
+        "auth-token" : `${sessionStorage.getItem('token')}`
       },
       body: JSON.stringify(hotel),
     })

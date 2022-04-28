@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+
+
 function Auth() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -54,6 +56,7 @@ function Auth() {
       .then((data) => data.json())
       .then((data) => {
         setMessageLogIn(data);
+        sessionStorage.setItem("token", data.token)
       })
       .catch((e) => {
         console.log("Hubo un error en el login");
@@ -139,6 +142,8 @@ function Auth() {
             </fieldset>
           </form>
           <br />
+
+          
           <h2>LOG IN</h2>
           <form action="javascript:void(0);">
             <fieldset class="elemento">
@@ -239,4 +244,5 @@ function Auth() {
     </body>
   );
 }
+
 export default Auth;

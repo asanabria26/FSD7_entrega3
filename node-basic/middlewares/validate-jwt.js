@@ -14,7 +14,7 @@ const verifyToken = (req, res, next)=>{
             req.user = veryfied
             next()
         } catch (error) {
-            res.status(400).json({message: 'Token no valido'})
+            return res.status(401).json({ message: 'Acceso denegado, inicia sesion'})
         }
     }
 }

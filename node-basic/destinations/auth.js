@@ -45,7 +45,7 @@ async function logInUser (req, res) {
     } else {
         const validPAssword = await bcrypt.compare(req.body.password, user.password)
         if (!validPAssword) {
-            return res.status(400).json({ message: "Contraseña no válida"})
+            return res.status(400).json({ message: "Usuario / contraseña no válida"})
         } else {
             const token = jwt.sign({
                 name: user.name,
