@@ -1,0 +1,120 @@
+{
+  "destinos": [
+    {
+      "img": "./img/aquarellaPtaDiablo.jpeg",
+      "name": "Hotel Aquarella resort",
+      "place": "Pta del Diablo",
+      "extra": "desayuno incluido",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint velit nobis soluta! Laboriosam ut voluptatem dolores vero obcaecati. Pariatur sunt minus fugiat amet, dolores optio numquam placeat soluta voluptas facilis.",
+      "id": 0
+    },
+    {
+      "img": "./img/oceanoHotel.jpeg",
+      "name": "Hotel Oceano",
+      "place": "Lavalleja",
+      "extra": "desayuno NO incluido",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint velit nobis soluta! Laboriosam ut voluptatem dolores vero obcaecati. Pariatur sunt minus fugiat amet, dolores optio numquam placeat soluta voluptas facilis.",
+      "id": 1
+    },
+    {
+      "img": "./img/la-pedrera-hotel.jpeg",
+      "name": "Hotel LaPe",
+      "place": "La pedrera",
+      "extra": "desayuno incluido",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint velit nobis soluta! Laboriosam ut voluptatem dolores vero obcaecati. Pariatur sunt minus fugiat amet, dolores optio numquam placeat soluta voluptas facilis.",
+      "id": 2
+    },
+    {
+      "img": "./img/vista-de-la-posada-sobre.jpeg",
+      "name": "Hotel El Cabo",
+      "place": "Cabo polonio",
+      "extra": "desayuno incluido",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint velit nobis soluta! Laboriosam ut voluptatem dolores vero obcaecati. Pariatur sunt minus fugiat amet, dolores optio numquam placeat soluta voluptas facilis.",
+      "id": 3
+    },
+    {
+      "img": "./img/barco.jpeg",
+      "name": "Hotel Barco",
+      "place": "Atlantida",
+      "extra": "desayuno incluido",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint velit nobis soluta! Laboriosam ut voluptatem dolores vero obcaecati. Pariatur sunt minus fugiat amet, dolores optio numquam placeat soluta voluptas facilis.",
+      "id": 4
+    },
+    {
+      "img": "./img/radi.jpeg",
+      "name": "Hotel Radisson",
+      "place": "Montevideo",
+      "extra": "5 estrellas",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint velit nobis soluta! Laboriosam ut voluptatem dolores vero obcaecati. Pariatur sunt minus fugiat amet, dolores optio numquam placeat soluta voluptas facilis.",
+      "id": 5
+    },
+    {
+      "img": "./img/hotelRural.jpeg",
+      "name": "Hotel Rural",
+      "place": "Laguna Negra",
+      "extra": "desayuno incluido",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint velit nobis soluta! Laboriosam ut voluptatem dolores vero obcaecati. Pariatur sunt minus fugiat amet, dolores optio numquam placeat soluta voluptas facilis.",
+      "id": 6
+    },
+    {
+      "img": "./img/lagneg.jpeg",
+      "name": "Hotel Laguna",
+      "place": "Laguna Negra",
+      "extra": " ",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint velit nobis soluta! Laboriosam ut voluptatem dolores vero obcaecati. Pariatur sunt minus fugiat amet, dolores optio numquam placeat soluta voluptas facilis.",
+      "id": 7
+    }
+  ],
+  "vehiculos": [
+    {
+      "img": "./img/raptor.jpeg",
+      "name": "Ford Raptor 2021 V8 580hp",
+      "price": "USD 150 Dia",
+      "id": 1
+    },
+    {
+      "img": "./img/swift.jpeg",
+      "name": "Swift Sport USD 90 Dia",
+      "price": "USD 99 Dia",
+      "id": 2
+    },
+    {
+      "img": "./img/x3.jpg",
+      "name": "BMW X3 2015",
+      "price": "USD 120 Dia",
+      "id": 3
+    },
+    {
+      "img": "./img/mini.jpeg",
+      "name": "Mini Cooper Cabrio",
+      "price": "USD 200 Dia",
+      "id": 4
+    }
+  ],
+  "destacados": [
+    {
+      "img": "./img/hotelColonia.jpeg",
+      "name": "Hotel Radisson",
+      "place": "Colonia",
+      "extra": "desayuno incluido + auto clase A de CORTESÍA",
+      "price": "USD 200 / noche",
+      "id": 1
+    },
+    {
+      "img": "./img/enjoy.jpeg",
+      "name": "Hotel Enjoy",
+      "place": "Pta del este",
+      "extra": "desayuno incluido + camioneta rural CORTESÍA",
+      "price": "USD 400 / noche",
+      "id": 2
+    },
+    {
+      "img": "./img/villaSerrana.jpeg",
+      "name": "Hotel Villa Serrana",
+      "place": "Lavalleja",
+      "extra": "translado al hotel ",
+      "price": "USD 135 / noche",
+      "id": 3
+    }
+  ]
+}

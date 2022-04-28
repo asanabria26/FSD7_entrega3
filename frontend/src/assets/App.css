@@ -1,0 +1,1133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#ayudaPG {
+  font-size: 1.6rem;
+  height: 100vh;
+}
+
+/* MediaQuery para resolución de escritorio*/
+
+@media (min-width: 1080px) {
+  #body {
+    font-size: 1.6rem;
+    height: 200vh;
+  }
+
+  .grid-container {
+    display: grid;
+    height: inherit;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 75px 1fr 4fr 1.5fr 75px;
+    grid-template-areas:
+      "head   head    head    head    head    "
+      "main1   main1    main1    main1    main1    "
+      "main2   main2    main2    main2    main2    "
+      "main3   main3    main3    main3    main3    "
+      "footer footer  footer  footer  footer  ";
+    column-gap: 5px;
+    font-size: 1.6rem;
+  }
+
+  .grid-container-help {
+    display: grid;
+    height: inherit;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 1fr 75px;
+    grid-template-areas:
+      "head"
+      "main"
+      "footer";
+    column-gap: 5px;
+    font-size: 1.6rem;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+  /* Sector del header*/
+
+  .cabecera {
+    grid-area: head;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "head1   head3    head3    head3    head3";
+  }
+
+  .menu {
+    text-align: right;
+    margin: auto;
+    grid-area: head3;
+  }
+
+  .menu,
+  .listaMenu {
+    display: inline-block;
+  }
+
+  .listaMenu .itemMenu {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    margin: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .listaMenu .itemMenu:hover {
+    border-bottom: black solid;
+    border-color: red;
+  }
+
+  .logo {
+    grid-area: head1;
+    text-align: center;
+    margin: auto;
+  }
+
+  .imgLogo,
+  .linkLogo {
+    font-size: 1.5rem;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+  .destacados {
+    grid-area: main1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "lema   paquetes";
+    background-image: url("/public/img/uru1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lema {
+    grid-area: lema;
+    margin: auto;
+    color: white;
+  }
+
+  .paquetes {
+    grid-area: paquetes;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .lemaTitulo {
+    font-family: stolzl, sans-serif;
+    font-weight: 900;
+    font-size: 3.8vw;
+  }
+
+  .uruguay {
+    font-size: 7.8vw;
+  }
+
+  .paq {
+    border: white solid 0.6px;
+    border-radius: 10%;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+  }
+  .oferta {
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+  }
+  .paq p {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    padding: 0.3rem;
+    text-align: center;
+  }
+  .fotoHotel {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    border-radius: 10px;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+  .destinosVarios {
+    grid-area: main2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas:
+      "titulo titulo titulo titulo"
+      "destino1 destino2 destino3 destino4"
+      "destino5 destino6 destino7 destino8";
+    margin: 2% 5% 2% 5%;
+  }
+
+  .Destinos {
+    grid-area: titulo;
+    margin: auto;
+  }
+
+  .h2Destinos {
+    display: inline-block;
+    font-family: stolzl, sans-serif;
+    font-size: 3.4rem;
+  }
+
+  .destino {
+    background-color: #f5f3f4;
+  }
+
+  .destino p {
+    color: black;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+  .autos {
+    grid-area: main3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+      "titulo titulo  titulo titulo"
+      "auto1 auto2 auto3 auto4";
+    margin: 2% 5% 2% 5%;
+  }
+
+  .autosAlquilerTitulo {
+    grid-area: titulo;
+    margin: auto;
+  }
+
+  .h2Autos {
+    display: inline-block;
+    font-family: stolzl, sans-serif;
+    font-size: 3.4rem;
+  }
+
+  .auto {
+    background-color: #415a77;
+  }
+
+  .fotoAuto {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    border-radius: 10px;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+  .contenedor {
+    margin: 70px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(101, 53, 53, 0.5);
+    border-radius: 20px;
+  }
+  .contenedor h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+  }
+  .contenedor .elemento label {
+    color: rgb(0, 0, 0);
+  }
+  .contenedor .elemento input {
+    width: 100%;
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(148, 133, 133);
+    margin-bottom: 30px;
+  }
+  .contenedor .elemento input[type="submit"] {
+    background-color: #6c0b36;
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+
+
+
+  .footer {
+    grid-area: footer;
+    background-color: #222823;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footer1   footer2    footer3";
+  }
+
+  .redes {
+    padding: 1rem;
+    display: -webkit-flex;
+  }
+
+  .menuSimple {
+    margin: auto;
+  }
+
+  .menuSimple::before {
+    content: "-";
+    color: white;
+  }
+
+  .menuSimple::after {
+    content: "-";
+    color: white;
+  }
+
+  .redes li:last-of-type {
+    margin-right: 0;
+  }
+
+  .redes .fa {
+    font-size: 3rem;
+    color: #fefefe;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10%;
+  }
+
+  .redes .fa:hover {
+    color: #4a4a4a;
+    transition: color 0.3s ease-in;
+    border: white solid 1px;
+    font-size: 4rem;
+  }
+
+  .listaRedes {
+    display: inline-block;
+  }
+
+  .Copyright {
+    margin: auto 5px auto 0;
+  }
+
+  .Copyright p {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #6c757d;
+    text-align: right;
+  }
+
+  .contacto {
+    color: #6c757d;
+    margin: auto auto auto 1rem;
+  }
+
+  .info {
+    text-decoration: none;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+  }
+
+  .material-icons {
+    font-size: 1.6rem;
+  }
+
+  .whatsapp {
+    position: fixed;
+    /*fixed*/
+    width: 50px;
+    height: 50px;
+    bottom: 80px;
+    right: 30px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 100;
+  }
+
+  .whatsapp-icon {
+    margin-top: 13px;
+  }
+
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: #6c757d;
+  }
+}
+
+/* ==================================================================================================================*/
+/* ==================================================================================================================*/
+/* ==================================================================================================================*/
+/* ==================================================================================================================*/
+/* ==================================================================================================================*/
+/* ==================================================================================================================*/
+
+/* MediaQuery para resolución de tablet*/
+
+@media (min-width: 650px) and (max-width: 1079px) {
+  #body {
+    font-size: 1.6rem;
+    height: 200vh;
+  }
+
+  .grid-container-help {
+    display: grid;
+    height: inherit;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 1fr 75px;
+    grid-template-areas:
+      "head"
+      "main"
+      "footer";
+    column-gap: 5px;
+    font-size: 1.6rem;
+  }
+  .grid-container {
+    display: grid;
+    height: inherit;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 75px 60vw 4fr 70vw 75px;
+    grid-template-areas:
+      "head   head    "
+      "main1   main1    "
+      "main2   main2    "
+      "main3   main3    "
+      "footer  footer  ";
+    column-gap: 5px;
+    font-size: 1.6rem;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+  /* Sector del header*/
+
+  .cabecera {
+    grid-area: head;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "head1 head3";
+  }
+
+  .menu {
+    text-align: right;
+    margin: auto;
+    grid-area: head3;
+  }
+
+  .menu,
+  .listaMenu {
+    display: inline-block;
+  }
+
+  .listaMenu .itemMenu {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    margin: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .listaMenu .itemMenu:hover {
+    border-bottom: black solid;
+    border-color: red;
+  }
+
+  .logo {
+    grid-area: head1;
+    text-align: center;
+    margin: auto;
+  }
+
+  .imgLogo,
+  .linkLogo {
+    font-size: 1.5rem;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+  .destacados {
+    grid-area: main1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 1fr;
+    grid-template-areas:
+      "lema"
+      "paquetes";
+    background-image: url("/public/img/uru1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lema {
+    grid-area: lema;
+    margin: auto;
+    color: white;
+  }
+
+  .paquetes {
+    grid-area: paquetes;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .lemaTitulo {
+    font-family: stolzl, sans-serif;
+    font-weight: 900;
+    font-size: 3.8vw;
+  }
+
+  .uruguay {
+    font-size: 7.8vw;
+  }
+
+  .paq {
+    border: white solid 0.6px;
+    border-radius: 10%;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+  }
+  .oferta {
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+  }
+  .paq p {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    padding: 0.3rem;
+    text-align: center;
+  }
+
+  .fotoHotel {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    border-radius: 10px;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+  .destinosVarios {
+    grid-area: main2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+      "titulo titulo"
+      "destino1 destino2 "
+      "destino3 destino4"
+      "destino5 destino6"
+      "destino7 destino8";
+    margin: 2% 5% 2% 5%;
+  }
+
+  .Destinos {
+    grid-area: titulo;
+    margin: auto;
+  }
+
+  .h2Destinos {
+    display: inline-block;
+    font-family: stolzl, sans-serif;
+    font-size: 3.4rem;
+  }
+
+  .destino {
+    background-color: #f5f3f4;
+  }
+
+  .destino p {
+    color: black;
+  }
+
+  .textoLorem {
+    margin: 50px;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+  .autos {
+    grid-area: main3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas:
+      "titulo titulo "
+      "auto1 auto2"
+      "auto3 auto4";
+    margin: 2% 5% 2% 5%;
+  }
+
+  .autosAlquilerTitulo {
+    grid-area: titulo;
+    margin: auto;
+  }
+
+  .h2Autos {
+    display: inline-block;
+    font-family: stolzl, sans-serif;
+    font-size: 3.4rem;
+  }
+
+  .auto {
+    background-color: #415a77;
+  }
+
+  .fotoAuto {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    border-radius: 10px;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+  .contenedor {
+    margin: 70px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(101, 53, 53, 0.5);
+    border-radius: 20px;
+  }
+  .contenedor h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+  }
+  .contenedor .elemento label {
+    color: rgb(0, 0, 0);
+  }
+  .contenedor .elemento input {
+    width: 100%;
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(148, 133, 133);
+    margin-bottom: 30px;
+  }
+  .contenedor .elemento input[type="submit"] {
+    background-color: #6c0b36;
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+
+  .footer {
+    grid-area: footer;
+    background-color: #222823;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footer1   footer2    footer3";
+  }
+
+  .redes {
+    padding: 1rem;
+    display: -webkit-flex;
+  }
+
+  .menuSimple {
+    margin: auto;
+  }
+
+  .menuSimple::before {
+    content: "-";
+    color: white;
+  }
+
+  .menuSimple::after {
+    content: "-";
+    color: white;
+  }
+
+  .redes li:last-of-type {
+    margin-right: 0;
+  }
+
+  .redes .fa {
+    font-size: 3rem;
+    color: #fefefe;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10%;
+  }
+
+  .redes .fa:hover {
+    color: #4a4a4a;
+    transition: color 0.3s ease-in;
+    border: white solid 1px;
+    font-size: 4rem;
+  }
+
+  .listaRedes {
+    display: inline-block;
+  }
+
+  .Copyright {
+    margin: auto 5px auto 0;
+  }
+
+  .Copyright p {
+    font-size: 1.5rem;
+    color: #6c757d;
+    text-align: right;
+  }
+
+  .contacto {
+    color: #6c757d;
+    margin: auto auto auto 1rem;
+  }
+
+  .info {
+    text-decoration: none;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+  }
+
+  .material-icons {
+    font-size: 1.6rem;
+  }
+
+  .whatsapp {
+    position: fixed;
+    /*fixed*/
+    width: 50px;
+    height: 50px;
+    bottom: 80px;
+    right: 30px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 100;
+  }
+
+  .whatsapp-icon {
+    margin-top: 13px;
+  }
+
+  .whatsapp2 {
+    background-color: #25d399;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 2%;
+  }
+
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: #6c757d;
+  }
+}
+
+/* ==================================================================================================================*/
+/* ==================================================================================================================*/
+/* ==================================================================================================================*/
+/* ==================================================================================================================*/
+/* ==================================================================================================================*/
+/* ==================================================================================================================*/
+
+/* MediaQuery para resolución de telefono*/
+
+@media (max-width: 649px) {
+  #body {
+    font-size: 1.6rem;
+    height: 250vh;
+  }
+
+  .grid-container-help {
+    display: grid;
+    height: inherit;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 1fr 75px;
+    grid-template-areas:
+      "head"
+      "main"
+      "footer";
+    column-gap: 5px;
+    font-size: 1.6rem;
+  }
+  .grid-container {
+    display: grid;
+    height: inherit;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 110vw 4fr 90vw 75px;
+    grid-template-areas:
+      "head  "
+      "main1 "
+      "main2 "
+      "main3 "
+      "footer";
+    column-gap: 5px;
+    font-size: 1.6rem;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+  /* Sector del header*/
+
+  .cabecera {
+    grid-area: head;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-areas:
+      "head1"
+      "head3";
+  }
+
+  .menu {
+    text-align: right;
+    margin: auto;
+    grid-area: head3;
+  }
+
+  .menu,
+  .listaMenu {
+    display: inline-block;
+  }
+
+  .listaMenu .itemMenu {
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .listaMenu .itemMenu:hover {
+    border-bottom: black solid;
+    border-color: red;
+  }
+
+  .logo {
+    grid-area: head1;
+    text-align: center;
+    margin: auto;
+  }
+
+  .imgLogo,
+  .linkLogo {
+    font-size: 0.5rem;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+  .destacados {
+    grid-area: main1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+      "lema "
+      "paquetes"
+      "paquetes";
+    background-image: url("/public/img/uru2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lema {
+    grid-area: lema;
+    margin: auto;
+    color: white;
+  }
+
+  .paquetes {
+    grid-area: paquetes;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lemaTitulo {
+    font-family: stolzl, sans-serif;
+    font-weight: 900;
+    font-size: 3.8vw;
+  }
+
+  .uruguay {
+    font-size: 7.8vw;
+  }
+
+  .paq {
+    border: white solid 0.6px;
+    border-radius: 10%;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+  }
+  .oferta {
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+  }
+  .paq p {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    padding: 0.3rem;
+    text-align: center;
+  }
+
+  .fotoHotel {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    border-radius: 10px;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+  .destinosVarios {
+    grid-area: main2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+      "titulo"
+      "destino1"
+      "destino2 "
+      "destino3"
+      "destino4"
+      "destino5"
+      "destino6"
+      "destino7"
+      "destino8";
+    margin: 2% 5% 2% 5%;
+  }
+
+  .Destinos {
+    grid-area: titulo;
+    margin: auto;
+  }
+
+  .h2Destinos {
+    display: inline-block;
+    font-family: stolzl, sans-serif;
+    font-size: 3.4rem;
+  }
+
+  .destino {
+    background-color: #f5f3f4;
+  }
+
+  .destino p {
+    color: black;
+  }
+
+  .textoLorem {
+    margin: 50px;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+  .autos {
+    grid-area: main3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas:
+      "titulo titulo "
+      "auto1 auto2"
+      "auto3 auto4";
+    margin: 2% 5% 2% 5%;
+  }
+
+  .autosAlquilerTitulo {
+    grid-area: titulo;
+    margin: auto;
+  }
+
+  .h2Autos {
+    display: inline-block;
+    font-family: stolzl, sans-serif;
+    font-size: 3.4rem;
+  }
+
+  .auto {
+    background-color: #415a77;
+  }
+
+  .fotoAuto {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    border-radius: 10px;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------------*/
+
+  .contenedor {
+    margin: 70px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(101, 53, 53, 0.5);
+    border-radius: 20px;
+  }
+  .contenedor h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+  }
+  .contenedor .elemento label {
+    color: rgb(0, 0, 0);
+  }
+  .contenedor .elemento input {
+    width: 100%;
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(148, 133, 133);
+    margin-bottom: 30px;
+  }
+  .contenedor .elemento input[type="submit"] {
+    background-color: #6c0b36;
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+
+  .footer {
+    grid-area: footer;
+    background-color: #222823;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footer1   footer2    footer3";
+  }
+
+  .redes {
+    padding: 1rem;
+    display: -webkit-flex;
+  }
+
+  .menuSimple {
+    margin: auto;
+  }
+
+  .menuSimple::before {
+    content: "-";
+    color: white;
+  }
+
+  .menuSimple::after {
+    content: "-";
+    color: white;
+  }
+
+  .redes li:last-of-type {
+    margin-right: 0;
+  }
+
+  .redes .fa {
+    font-size: 1.5rem;
+    color: #fefefe;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10%;
+  }
+
+  .redes .fa:hover {
+    color: #4a4a4a;
+    transition: color 0.3s ease-in;
+    border: white solid 1px;
+    font-size: 4rem;
+  }
+
+  .listaRedes {
+    display: inline-block;
+  }
+
+  .Copyright {
+    margin: auto 5px auto 0;
+  }
+
+  .Copyright p {
+    font-size: 1.2rem;
+    color: #6c757d;
+    text-align: right;
+  }
+
+  .contacto {
+    color: #6c757d;
+    margin: auto auto auto 1rem;
+  }
+
+  .info {
+    text-decoration: none;
+    padding: 0.2rem;
+    font-size: 1rem;
+  }
+
+  .material-icons {
+    font-size: 1.6rem;
+  }
+
+  .whatsapp {
+    position: fixed;
+    /*fixed*/
+    width: 50px;
+    height: 50px;
+    bottom: 80px;
+    right: 30px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 100;
+  }
+
+  .whatsapp-icon {
+    margin-top: 13px;
+  }
+
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: #6c757d;
+  }
+}
