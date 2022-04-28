@@ -7,7 +7,7 @@ const { verifyToken, TOKEN_SECRET } = require('../middlewares/validate-jwt');
 
 router.post('/',verifyToken,DestinationController.addDestination)
 router.get('/',DestinationController.listDestination)
-router.patch('/',DestinationController.modifyDestination)
+router.patch('/',verifyToken,DestinationController.modifyDestination)
 router.delete('/',verifyToken,DestinationController.deleteDestination)
 router.post('/register', DestinationAuth.addUser)
 router.post('/login', DestinationAuth.logInUser)

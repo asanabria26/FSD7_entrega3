@@ -26,6 +26,7 @@ const ManageHotel = (props) => {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
+        "auth-token" : `${sessionStorage.getItem('token')}`
       },
       body: JSON.stringify(hotel),
     })
@@ -44,6 +45,7 @@ const ManageHotel = (props) => {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
+        "auth-token" : `${sessionStorage.getItem('token')}`
       },
       body: JSON.stringify(hotel),
     })
